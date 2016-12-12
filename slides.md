@@ -14,6 +14,8 @@ colortheme: crane
 - slides: [ericmjl.github.io/big-data-boston-2016/slides.pdf][slides]
 - source: [github.com/ericmjl/big-data-boston-2016][source]
 
+![QR code](./figures/qr-code.jpg)
+
 [slides]: http://ericmjl.github.io/big-data-boston-2016/slides.pdf
 [source]: https://github.com/ericmjl/big-data-boston-2016
 [html]: http://ericmjl.github.io/big-data-boston-2016/
