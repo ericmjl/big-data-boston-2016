@@ -77,5 +77,7 @@ colortheme: crane
 
 - personal website: [ericmjl.com](http://www.ericmjl.com/)
 - linkedin: [linkedin.com/in/ericmjl](http://www.linkedin.com/in/ericmjl/)
-- datacamp: network analysis course coming within the next few months!
+- [datacamp][dc]: network analysis course coming within the next few months!
 - available for training your staff on data analysis and network science
+
+[dc]: http://www.datacamp.com/
