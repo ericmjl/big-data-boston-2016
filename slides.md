@@ -10,7 +10,8 @@ colortheme: crane
 
 # slides are available online
 
-github: [ericmjl.github.io/big-data-boston-2016/](http://ericmjl.github.io/big-data-boston-2016/)
+slides: [ericmjl.github.io/big-data-boston-2016](http://ericmjl.github.io/big-data-boston-2016)
+source: [github.com/ericmjl/big-data-boston-2016](https://github.com/ericmjl/big-data-boston-2016)
 
 # about myself
 
