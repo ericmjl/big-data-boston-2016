@@ -14,7 +14,7 @@ import os
 import hashlib
 import yaml
 
-logging.basicConfig(level=logging.INFO)
+logging.basicConfig(level=logging.DEBUG)
 
 
 def hashfile(f, hasher, blocksize=65536):
@@ -38,16 +38,26 @@ files = [
 ]
 
 hashes = dict()
-for f in files:
-    with open('{0}'.format(f), 'rb') as f:
+for fname in files:
+    with open('{0}'.format(fname), 'rb') as f:
         fhash = hashfile(f, hashlib.sha256())
-        hashes[f] = fhash
+        hashes[fname] = fhash
+
+print(hashes)
+# If hash log doesn't exist, write to disk.
+if 'hash.log' not in os.listdir():
+    print('hash.log' in os.listdir())
+    with open('hash.log', 'w+') as f:
+        yaml.dump(hashes, f, canonical=False, default_flow_style=False)
+
 
 with open('hash.log', 'r+') as f:
     prev_hashes = yaml.load(f)
 
+
 # Check if hashes are identical or not.
 for f in files:
+    logging.debug(f)
     if hashes[f] == prev_hashes[f]:
         logging.info('file {0} unchanged.'.format(f))
     else:
