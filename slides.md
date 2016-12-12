@@ -14,8 +14,6 @@ colortheme: crane
 - slides: [ericmjl.github.io/big-data-boston-2016/slides.pdf][slides]
 - source: [github.com/ericmjl/big-data-boston-2016][source]
 
-![QR code](./figures/qr-code.jpg)
-
 [slides]: http://ericmjl.github.io/big-data-boston-2016/slides.pdf
 [source]: https://github.com/ericmjl/big-data-boston-2016
 [html]: http://ericmjl.github.io/big-data-boston-2016/
@@ -37,7 +35,7 @@ colortheme: crane
 # what are networks
 
 ![networks, a.k.a. **graphs**, are composed of **nodes** (circles) and **edges** (lines)
-](./figures/networks.png){#networks .class width=350}
+](./figures/networks.png){#networks .class width=100}
 
 # example 1: recommendation systems
 
