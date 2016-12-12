@@ -1,5 +1,5 @@
 ---
-title: networks, networks, networks everywhere!
+title: networks, networks everywhere!
 author: Eric J. Ma
 template: default.beamer
 ---
@@ -18,32 +18,42 @@ github: http://github.com/ericmjl/big-data-boston-2016/
 # outline
 
 1. what are networks?
-1. example 1: recommendation systems - cliques
-1. example 2: panama papers - path tracing
-1. example 3: influenza ecology & evolution - network statistics
-1. example 4: neural networks on networks - graph deep learning
+1. example 1: recommendation systems
+1. example 2: panama papers
+1. example 3: influenza ecology & evolution
+1. example 4: neural networks on networks
 
 # what are networks
 
 networks, a.k.a. **graphs**, are composed of **nodes** (circles) and **edges** (lines)
 
-![A simple network.](./figures/networks.png){#networks .class width=400}
+![a simple network.](./figures/networks.png){#networks .class width=400}
 
 # example 1: recommendation systems
 
 if `A` is connected to `B` and `C`, but `B` and `C` are not connected, then maybe they should be!
 
-![A simple recommendation system.](./figures/recommender.png){#recommender .class width=300}
+![a simple recommendation system.](./figures/recommender.png){#recommender .class width=200}
 
 # example 1: recommendation systems
 
+if `A` and `B` share overlapping interests, then maybe some of `B`'s interests can be recommended to `A`.
 
+![collaborative filtering.](./figures/collaborative-filtering.png){#recommender .class width=400}
 
-![Collaborative filtering.](./figures/collaborative-filtering.png){#recommender .class width=400}
+# example 2: panama papers
 
-# example 2: influenza ecology and evolution
+graph databases were used to show how the rich hide their money.[^money]
 
-# example 3: neural networks on networks
+![graph databases encode rich relationships.](./figures/panama.png){#panama .class width=400}
+
+[^money]: https://neo4j.com/blog/icij-neo4j-unravel-panama-papers/
+
+# example 3: influenza ecology and evolution
+
+![for influenza, gene shuffling probably helps in host switching.](./figures/influenza.png){#flu .class width=400}
+
+# example 4: neural networks on networks
 
 # conclusions
 
