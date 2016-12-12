@@ -51,7 +51,7 @@ colortheme: crane
 
 ![graph databases were used to show how the rich hide their money.[^money]](./figures/panama.png){#panama .class width=350}
 
-[^money]: [ICIJ and Neo4j unravel the panama papers.](https://neo4j.com/blog/icij-neo4j-unravel-panama-papers/)
+[^money]: [International Consortium of Investigative Journalists (ICIJ) and Neo4j unravel the panama papers.](https://neo4j.com/blog/icij-neo4j-unravel-panama-papers/)
 
 # example 3: influenza ecology and evolution
 
