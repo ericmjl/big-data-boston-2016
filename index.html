@@ -5,7 +5,7 @@
   <meta http-equiv="Content-Style-Type" content="text/css" />
   <meta name="generator" content="pandoc" />
   <meta name="author" content="Eric J. Ma" />
-  <title>networks, networks, networks everywhere!</title>
+  <title>networks, networks everywhere!</title>
   <style type="text/css">code{white-space: pre;}</style>
   <style>
   
@@ -17,11 +17,16 @@
       padding-bottom: 2rem;
   }
   
+  h1.title{
+  
+      font-size: 3rem;
+  }
+  
   </style>
 </head>
 <body>
 <div id="header">
-<h1 class="title">networks, networks, networks everywhere!</h1>
+<h1 class="title">networks, networks everywhere!</h1>
 <h2 class="author">Eric J. Ma</h2>
 </div>
 <h1 id="slides-are-available-online">slides are available online</h1>
@@ -35,30 +40,41 @@
 <h1 id="outline">outline</h1>
 <ol style="list-style-type: decimal">
 <li>what are networks?</li>
-<li>example 1: recommendation systems - cliques</li>
-<li>example 2: panama papers - path tracing</li>
-<li>example 3: influenza ecology &amp; evolution - network statistics</li>
-<li>example 4: neural networks on networks - graph deep learning</li>
+<li>example 1: recommendation systems</li>
+<li>example 2: panama papers</li>
+<li>example 3: influenza ecology &amp; evolution</li>
+<li>example 4: neural networks on networks</li>
 </ol>
 <h1 id="what-are-networks">what are networks</h1>
 <p>networks, a.k.a. <strong>graphs</strong>, are composed of <strong>nodes</strong> (circles) and <strong>edges</strong> (lines)</p>
 <div class="figure">
-<img src="./figures/networks.png" alt="A simple network." id="networks" class="class" width="400" />
-<p class="caption">A simple network.</p>
+<img src="./figures/networks.png" alt="a simple network." id="networks" class="class" width="400" />
+<p class="caption">a simple network.</p>
 </div>
 <h1 id="example-1-recommendation-systems">example 1: recommendation systems</h1>
 <p>if <code>A</code> is connected to <code>B</code> and <code>C</code>, but <code>B</code> and <code>C</code> are not connected, then maybe they should be!</p>
 <div class="figure">
-<img src="./figures/recommender.png" alt="A simple recommendation system." id="recommender" class="class" width="300" />
-<p class="caption">A simple recommendation system.</p>
+<img src="./figures/recommender.png" alt="a simple recommendation system." id="recommender" class="class" width="200" />
+<p class="caption">a simple recommendation system.</p>
 </div>
 <h1 id="example-1-recommendation-systems-1">example 1: recommendation systems</h1>
+<p>if <code>A</code> and <code>B</code> share overlapping interests, then maybe some of <code>B</code>'s interests can be recommended to <code>A</code>.</p>
 <div class="figure">
-<img src="./figures/collaborative-filtering.png" alt="Collaborative filtering." id="recommender" class="class" width="400" />
-<p class="caption">Collaborative filtering.</p>
+<img src="./figures/collaborative-filtering.png" alt="collaborative filtering." id="recommender" class="class" width="400" />
+<p class="caption">collaborative filtering.</p>
 </div>
-<h1 id="example-2-influenza-ecology-and-evolution">example 2: influenza ecology and evolution</h1>
-<h1 id="example-3-neural-networks-on-networks">example 3: neural networks on networks</h1>
+<h1 id="example-2-panama-papers">example 2: panama papers</h1>
+<p>graph databases were used to show how the rich hide their money.<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a></p>
+<div class="figure">
+<img src="./figures/panama.png" alt="graph databases encode rich relationships." id="panama" class="class" width="400" />
+<p class="caption">graph databases encode rich relationships.</p>
+</div>
+<h1 id="example-3-influenza-ecology-and-evolution">example 3: influenza ecology and evolution</h1>
+<div class="figure">
+<img src="./figures/influenza.png" alt="for influenza, gene shuffling probably helps in host switching." id="flu" class="class" width="400" />
+<p class="caption">for influenza, gene shuffling probably helps in host switching.</p>
+</div>
+<h1 id="example-4-neural-networks-on-networks">example 4: neural networks on networks</h1>
 <h1 id="conclusions">conclusions</h1>
 <ul>
 <li>think relationally</li>
@@ -70,5 +86,11 @@
 <li>available for data and network science training</li>
 <li></li>
 </ul>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>https://neo4j.com/blog/icij-neo4j-unravel-panama-papers/<a href="#fnref1">↩</a></p></li>
+</ol>
+</div>
 </body>
 </html>
