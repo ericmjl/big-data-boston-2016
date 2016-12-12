@@ -22,7 +22,7 @@ colortheme: crane
 
 - doctoral candidate, MIT biological engineering
 - self-taught pythonista
-- using networks to problems in infectious disease ecology, evolution & biochemistry
+- using networks to solve problems in infectious disease ecology, evolution & biochemistry
 
 # outline
 
