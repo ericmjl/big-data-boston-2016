@@ -1,13 +1,16 @@
 ---
 title: networks, networks everywhere!
-author: Eric J. Ma
+author:
+- name: Eric J. Ma
+  affiliation: MIT
+date: 12 December 2016
 template: default.beamer
+colortheme: crane
 ---
 
 # slides are available online
 
-github: http://github.com/ericmjl/big-data-boston-2016/
-
+github: [ericmjl.github.io/big-data-boston-2016/](http://ericmjl.github.io/big-data-boston-2016/)
 
 # about myself
 
@@ -25,35 +28,44 @@ github: http://github.com/ericmjl/big-data-boston-2016/
 
 # what are networks
 
-networks, a.k.a. **graphs**, are composed of **nodes** (circles) and **edges** (lines)
-
-![a simple network.](./figures/networks.png){#networks .class width=400}
-
-# example 1: recommendation systems
-
-if `A` is connected to `B` and `C`, but `B` and `C` are not connected, then maybe they should be!
-
-![a simple recommendation system.](./figures/recommender.png){#recommender .class width=200}
+![networks, a.k.a. **graphs**, are composed of **nodes** (circles) and **edges** (lines)
+](./figures/networks.png){#networks .class width=350}
 
 # example 1: recommendation systems
 
-if `A` and `B` share overlapping interests, then maybe some of `B`'s interests can be recommended to `A`.
+![if `A` is connected to `B` and `C`, but `B` and `C` are not connected, then maybe they should be!](./figures/recommender.png){#recommender .class width=200}
 
-![collaborative filtering.](./figures/collaborative-filtering.png){#recommender .class width=400}
+# example 1: recommendation systems
+
+![if `A` and `B` share overlapping interests, then maybe some of `B`'s interests can be recommended to `A`.[^collab]](./figures/collaborative-filtering.png){#recommender .class width=350}
+
+[^collab]: [Collaborative filtering](https://en.wikipedia.org/wiki/Collaborative_filtering)
 
 # example 2: panama papers
 
-graph databases were used to show how the rich hide their money.[^money]
+![graph databases were used to show how the rich hide their money.[^money]](./figures/panama.png){#panama .class width=350}
 
-![graph databases encode rich relationships.](./figures/panama.png){#panama .class width=400}
-
-[^money]: https://neo4j.com/blog/icij-neo4j-unravel-panama-papers/
+[^money]: [ICIJ and Neo4j unravel the panama papers.](https://neo4j.com/blog/icij-neo4j-unravel-panama-papers/)
 
 # example 3: influenza ecology and evolution
 
-![for influenza, gene shuffling probably helps in host switching.](./figures/influenza.png){#flu .class width=400}
+![for influenza, gene shuffling probably helps in host switching.[^pnas]](./figures/influenza.png){#flu .class width=380}
+
+[^pnas]: [Reticulate evolution is favoured in influenza niche switching.](http://www.pnas.org/content/113/19/5335.abstract)
 
 # example 4: neural networks on networks
+
+![graph convolutions let us do machine learning on graph-structured data.[^graphconv]](./figures/convolutions.png){#convolutions .class width=350}
+
+[^graphconv]: [Convolutional Networks on Graphs for Learning Molecular Fingerprints](https://arxiv.org/abs/1509.09292)
+
+# visualize networks rationally
+
+![move away from the hairball!](./figures/hairballs.png){#hairballs .class width=400}
+
+# visualize networks rationally
+
+![rational network visualizations prioritize placement of nodes](./figures/rational-viz.png){#rational-viz .class width=400}
 
 # conclusions
 
@@ -63,5 +75,6 @@ graph databases were used to show how the rich hide their money.[^money]
 # keep in touch
 
 - personal website: [ericmjl.com](http://www.ericmjl.com/)
-- available for data and network science training
--
+- linkedin: [linkedin.com/in/ericmjl](http://www.linkedin.com/in/ericmjl/)
+- datacamp: network analysis course coming within the next few months!
+- available for training your staff on data analysis and network science

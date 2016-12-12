@@ -4,7 +4,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta http-equiv="Content-Style-Type" content="text/css" />
   <meta name="generator" content="pandoc" />
-  <meta name="author" content="Eric J. Ma" />
+  <meta name="date" content="2016-12-12" />
   <title>networks, networks everywhere!</title>
   <style type="text/css">code{white-space: pre;}</style>
   <style>
@@ -22,15 +22,20 @@
       font-size: 3rem;
   }
   
+  code {
+      background-color: #e8e8e8;
+  }
+  
   </style>
 </head>
 <body>
 <div id="header">
 <h1 class="title">networks, networks everywhere!</h1>
-<h2 class="author">Eric J. Ma</h2>
+<h2 class="author">by Eric J. Ma (MIT)</h2>
+<h3 class="date">12 December 2016</h3>
 </div>
 <h1 id="slides-are-available-online">slides are available online</h1>
-<p>github: http://github.com/ericmjl/big-data-boston-2016/</p>
+<p>github: <a href="http://ericmjl.github.io/big-data-boston-2016/">ericmjl.github.io/big-data-boston-2016/</a></p>
 <h1 id="about-myself">about myself</h1>
 <ul>
 <li>doctoral candidate, MIT biological engineering</li>
@@ -46,35 +51,45 @@
 <li>example 4: neural networks on networks</li>
 </ol>
 <h1 id="what-are-networks">what are networks</h1>
-<p>networks, a.k.a. <strong>graphs</strong>, are composed of <strong>nodes</strong> (circles) and <strong>edges</strong> (lines)</p>
 <div class="figure">
-<img src="./figures/networks.png" alt="a simple network." id="networks" class="class" width="400" />
-<p class="caption">a simple network.</p>
+<img src="./figures/networks.png" alt="networks, a.k.a. graphs, are composed of nodes (circles) and edges (lines)" id="networks" class="class" width="350" />
+<p class="caption">networks, a.k.a. <strong>graphs</strong>, are composed of <strong>nodes</strong> (circles) and <strong>edges</strong> (lines)</p>
 </div>
 <h1 id="example-1-recommendation-systems">example 1: recommendation systems</h1>
-<p>if <code>A</code> is connected to <code>B</code> and <code>C</code>, but <code>B</code> and <code>C</code> are not connected, then maybe they should be!</p>
 <div class="figure">
-<img src="./figures/recommender.png" alt="a simple recommendation system." id="recommender" class="class" width="200" />
-<p class="caption">a simple recommendation system.</p>
+<img src="./figures/recommender.png" alt="if A is connected to B and C, but B and C are not connected, then maybe they should be!" id="recommender" class="class" width="200" />
+<p class="caption">if <code>A</code> is connected to <code>B</code> and <code>C</code>, but <code>B</code> and <code>C</code> are not connected, then maybe they should be!</p>
 </div>
 <h1 id="example-1-recommendation-systems-1">example 1: recommendation systems</h1>
-<p>if <code>A</code> and <code>B</code> share overlapping interests, then maybe some of <code>B</code>'s interests can be recommended to <code>A</code>.</p>
 <div class="figure">
-<img src="./figures/collaborative-filtering.png" alt="collaborative filtering." id="recommender" class="class" width="400" />
-<p class="caption">collaborative filtering.</p>
+<img src="./figures/collaborative-filtering.png" alt="if A and B share overlapping interests, then maybe some of B&#39;s interests can be recommended to A." id="recommender" class="class" width="350" />
+<p class="caption">if <code>A</code> and <code>B</code> share overlapping interests, then maybe some of <code>B</code>'s interests can be recommended to <code>A</code>.<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a></p>
 </div>
 <h1 id="example-2-panama-papers">example 2: panama papers</h1>
-<p>graph databases were used to show how the rich hide their money.<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a></p>
 <div class="figure">
-<img src="./figures/panama.png" alt="graph databases encode rich relationships." id="panama" class="class" width="400" />
-<p class="caption">graph databases encode rich relationships.</p>
+<img src="./figures/panama.png" alt="graph databases were used to show how the rich hide their money." id="panama" class="class" width="350" />
+<p class="caption">graph databases were used to show how the rich hide their money.<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a></p>
 </div>
 <h1 id="example-3-influenza-ecology-and-evolution">example 3: influenza ecology and evolution</h1>
 <div class="figure">
-<img src="./figures/influenza.png" alt="for influenza, gene shuffling probably helps in host switching." id="flu" class="class" width="400" />
-<p class="caption">for influenza, gene shuffling probably helps in host switching.</p>
+<img src="./figures/influenza.png" alt="for influenza, gene shuffling probably helps in host switching." id="flu" class="class" width="380" />
+<p class="caption">for influenza, gene shuffling probably helps in host switching.<a href="#fn3" class="footnoteRef" id="fnref3"><sup>3</sup></a></p>
 </div>
 <h1 id="example-4-neural-networks-on-networks">example 4: neural networks on networks</h1>
+<div class="figure">
+<img src="./figures/convolutions.png" alt="graph convolutions let us do machine learning on graph-structured data." id="convolutions" class="class" width="350" />
+<p class="caption">graph convolutions let us do machine learning on graph-structured data.<a href="#fn4" class="footnoteRef" id="fnref4"><sup>4</sup></a></p>
+</div>
+<h1 id="visualize-networks-rationally">visualize networks rationally</h1>
+<div class="figure">
+<img src="./figures/hairballs.png" alt="move away from the hairball!" id="hairballs" class="class" width="400" />
+<p class="caption">move away from the hairball!</p>
+</div>
+<h1 id="visualize-networks-rationally-1">visualize networks rationally</h1>
+<div class="figure">
+<img src="./figures/rational-viz.png" alt="rational network visualizations prioritize placement of nodes" id="rational-viz" class="class" width="400" />
+<p class="caption">rational network visualizations prioritize placement of nodes</p>
+</div>
 <h1 id="conclusions">conclusions</h1>
 <ul>
 <li>think relationally</li>
@@ -83,13 +98,17 @@
 <h1 id="keep-in-touch">keep in touch</h1>
 <ul>
 <li>personal website: <a href="http://www.ericmjl.com/">ericmjl.com</a></li>
-<li>available for data and network science training</li>
-<li></li>
+<li>linkedin: <a href="http://www.linkedin.com/in/ericmjl/">linkedin.com/in/ericmjl</a></li>
+<li>datacamp: network analysis course coming within the next few months!</li>
+<li>available for training your staff on data analysis and network science</li>
 </ul>
 <div class="footnotes">
 <hr />
 <ol>
-<li id="fn1"><p>https://neo4j.com/blog/icij-neo4j-unravel-panama-papers/<a href="#fnref1">↩</a></p></li>
+<li id="fn1"><p><a href="https://en.wikipedia.org/wiki/Collaborative_filtering">Collaborative filtering</a><a href="#fnref1">↩</a></p></li>
+<li id="fn2"><p><a href="https://neo4j.com/blog/icij-neo4j-unravel-panama-papers/">ICIJ and Neo4j unravel the panama papers.</a><a href="#fnref2">↩</a></p></li>
+<li id="fn3"><p><a href="http://www.pnas.org/content/113/19/5335.abstract">Reticulate evolution is favoured in influenza niche switching.</a><a href="#fnref3">↩</a></p></li>
+<li id="fn4"><p><a href="https://arxiv.org/abs/1509.09292">Convolutional Networks on Graphs for Learning Molecular Fingerprints</a><a href="#fnref4">↩</a></p></li>
 </ol>
 </div>
 </body>
