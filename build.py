@@ -26,11 +26,14 @@ def hashfile(f, hasher, blocksize=65536):
 
 
 figures = [
-    'collaborative-filtering',
-    'influenza',
     'networks',
-    'panama',
     'recommender',
+    'collaborative-filtering',
+    'panama',
+    'influenza',
+    'convolutions',
+    'hairballs',
+    'rational-viz',
 ]
 
 hashes = dict()
@@ -45,4 +48,22 @@ with open('hash.log', 'w+') as f:
 
 with open('hash.log', 'r+') as f:
     loaded_hashes = yaml.load(f)
-    logging.info(loaded_hashes)
+    # logging.info(loaded_hashes)
+
+# Check if hashes are identical or not.
+for fig in figures:
+    if hashes[fig] == loaded_hashes[fig]:
+        logging.info('figure {0} unchanged.'.format(fig))
+    else:
+        logging.info('figure {0}.pdf has changed')
+        os.system("convert -density 300 -resize 50% figures/{0}.pdf \
+            figures/{0}.png".format(fig))
+
+logging.info('converting slides to PDF...')
+os.system("pandoc slides.md -t beamer -o slides.pdf --template=default.beamer")
+logging.info('converting slides to HTML...')
+os.system("pandoc slides.md -o index.html -H docs/css/styles.css \
+    --template=default.html")
+
+logging.info('checking status of the repository')
+os.system('git status')
