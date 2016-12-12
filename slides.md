@@ -35,7 +35,7 @@ colortheme: crane
 # what are networks
 
 ![networks, a.k.a. **graphs**, are composed of **nodes** (circles) and **edges** (lines)
-](./figures/networks.png){#networks .class width=100}
+](./figures/networks.png){#networks .class width=300}
 
 # example 1: recommendation systems
 
