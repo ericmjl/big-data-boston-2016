@@ -55,25 +55,30 @@ with open('hash.log', 'r+') as f:
     prev_hashes = yaml.load(f)
 
 
-# Check if hashes are identical or not.
+# Check if hashes are identical or not. Priority order is as such:
+# 1. If any images or the slides are changed, rebuild slides.
+# 2. If none of the images are changed and
+no_files_changed = True
 for f in files:
     logging.debug(f)
     if hashes[f] == prev_hashes[f]:
         logging.info('file {0} unchanged.'.format(f))
     else:
-        logging.info('file {0}.pdf has changed')
+        no_files_changed = False
+        logging.info('file {0} has changed'.format(f))
         if f[-4:] == '.pdf':
             fstr = f[:-4]
-            os.system("convert -density 300 -resize 50% {0}.pdf \
+            os.system("convert -density 300 -resize 50% {0} \
                 {1}.png".format(f, fstr))
-        elif f == 'slides.md':
-            logging.info('converting slides to PDF...')
-            os.system("pandoc slides.md -t beamer -o slides.pdf \
-                --template=default.beamer")
 
-            logging.info('converting slides to HTML...')
-            os.system("pandoc slides.md -o index.html -H docs/css/styles.css \
-                --template=default.html")
+if not no_files_changed:
+    logging.info('converting slides to PDF...')
+    os.system("pandoc slides.md -t beamer -o slides.pdf \
+        --template=default.beamer")
+
+    logging.info('converting slides to HTML...')
+    os.system("pandoc slides.md -o index.html -H docs/css/styles.css \
+        --template=default.html")
 
 # Write new hashes to disk.
 with open('hash.log', 'w+') as f:
