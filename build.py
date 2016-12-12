@@ -25,45 +25,53 @@ def hashfile(f, hasher, blocksize=65536):
     return hasher.hexdigest()
 
 
-figures = [
-    'networks',
-    'recommender',
-    'collaborative-filtering',
-    'panama',
-    'influenza',
-    'convolutions',
-    'hairballs',
-    'rational-viz',
+files = [
+    'figures/networks.pdf',
+    'figures/recommender.pdf',
+    'figures/collaborative-filtering.pdf',
+    'figures/panama.pdf',
+    'figures/influenza.pdf',
+    'figures/convolutions.pdf',
+    'figures/hairballs.pdf',
+    'figures/rational-viz.pdf',
+    'slides.md',
 ]
 
 hashes = dict()
-for fig in figures:
-    with open('figures/{0}.pdf'.format(fig), 'rb') as f:
+for f in files:
+    with open('{0}'.format(f), 'rb') as f:
         fhash = hashfile(f, hashlib.sha256())
-        hashes[fig] = fhash
-
-with open('hash.log', 'w+') as f:
-    yaml.dump(hashes, f, canonical=False, default_flow_style=False)
-# logging.info(yaml.dump(hashes))
+        hashes[f] = fhash
 
 with open('hash.log', 'r+') as f:
-    loaded_hashes = yaml.load(f)
-    # logging.info(loaded_hashes)
+    prev_hashes = yaml.load(f)
 
 # Check if hashes are identical or not.
-for fig in figures:
-    if hashes[fig] == loaded_hashes[fig]:
-        logging.info('figure {0} unchanged.'.format(fig))
+for f in files:
+    if hashes[f] == prev_hashes[f]:
+        logging.info('file {0} unchanged.'.format(f))
     else:
-        logging.info('figure {0}.pdf has changed')
-        os.system("convert -density 300 -resize 50% figures/{0}.pdf \
-            figures/{0}.png".format(fig))
+        logging.info('file {0}.pdf has changed')
+        if f[-4:] == '.pdf':
+            fstr = f[:-4]
+            os.system("convert -density 300 -resize 50% {0}.pdf \
+                {1}.png".format(f, fstr))
+        elif f == 'slides.md':
+            logging.info('converting slides to PDF...')
+            os.system("pandoc slides.md -t beamer -o slides.pdf \
+                --template=default.beamer")
 
-logging.info('converting slides to PDF...')
-os.system("pandoc slides.md -t beamer -o slides.pdf --template=default.beamer")
-logging.info('converting slides to HTML...')
-os.system("pandoc slides.md -o index.html -H docs/css/styles.css \
-    --template=default.html")
+            logging.info('converting slides to HTML...')
+            os.system("pandoc slides.md -o index.html -H docs/css/styles.css \
+                --template=default.html")
+
+# Write new hashes to disk.
+with open('hash.log', 'w+') as f:
+    yaml.dump(hashes, f, canonical=False, default_flow_style=False)
+    logging.info('file hashes are:')
+    logging.info(hashes)
+
+
 
 logging.info('checking status of the repository')
 os.system('git status')
