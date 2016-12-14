@@ -12,7 +12,7 @@ theme: beige
 # slides are available online
 
 - html notes: [ericmjl.github.io/big-data-boston-2016][html]
-- slides: [ericmjl.github.io/big-data-boston-2016/slides.pdf][slides]
+- slides: [ericmjl.github.io/big-data-boston-2016/slides.html][slides]
 - source: [github.com/ericmjl/big-data-boston-2016][source]
 
 [slides]: http://ericmjl.github.io/big-data-boston-2016/slides.pdf
