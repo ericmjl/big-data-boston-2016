@@ -69,7 +69,7 @@ theme: beige
 
 # visualize networks rationally
 
-![move away from the hairball!](./figures/hairballs.png){#hairballs .class width=600}
+![move away from the hairball!](./figures/hairballs.png){#hairballs .class width=800}
 
 # visualize networks rationally
 
