@@ -69,21 +69,8 @@ for f in files:
             os.system("convert -density 300 -resize 50% {0} \
                 {1}.png".format(f, fstr))
 
-logging.info('converting slides to PDF...')
-os.system("pandoc slides.md -t beamer -o slides.pdf \
-    --template=default.beamer")
-
-logging.info('converting slides to HTML...')
-os.system("pandoc slides.md -o index.html -H docs/css/styles.css \
-    --template=default.html")
-
 # Write new hashes to disk.
 with open('hash.log', 'w+') as f:
     yaml.dump(hashes, f, canonical=False, default_flow_style=False)
     logging.info('file hashes are:')
     logging.info(hashes)
-
-
-
-logging.info('checking status of the repository')
-os.system('git status')

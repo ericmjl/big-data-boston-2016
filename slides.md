@@ -18,6 +18,8 @@ colortheme: crane
 [source]: https://github.com/ericmjl/big-data-boston-2016
 [html]: http://ericmjl.github.io/big-data-boston-2016/
 
+---
+
 # about myself
 
 - doctoral candidate, MIT biological engineering
