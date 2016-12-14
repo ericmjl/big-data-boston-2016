@@ -45,7 +45,7 @@ theme: beige
 
 # example 1: recommendation systems
 
-![if `A` and `B` share overlapping interests, then maybe some of `B`'s interests can be recommended to `A`.[^collab]](./figures/collaborative-filtering.png){#recommender .class width=350}
+![if `A` and `B` share overlapping interests, then maybe some of `B`'s interests can be recommended to `A`.[^collab]](./figures/collaborative-filtering.png){#recommender .class width=600}
 
 [^collab]: [Collaborative filtering](https://en.wikipedia.org/wiki/Collaborative_filtering)
 
