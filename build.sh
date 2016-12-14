@@ -1,8 +1,8 @@
 python build.py
 
 # Make PDF version of slides
-pandoc slides.md -t beamer -o slides.pdf \
-    --template=default.beamer
+# pandoc slides.md -t beamer -o slides.pdf \
+#     --template=default.beamer
 
 # Make HTML notes version of slides
 pandoc slides.md -o index.html -H docs/css/styles.css \
