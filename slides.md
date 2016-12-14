@@ -6,6 +6,7 @@ author:
 date: 12 December 2016
 template: default.beamer
 colortheme: crane
+theme: beige
 ---
 
 # slides are available online
