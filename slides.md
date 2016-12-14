@@ -57,7 +57,7 @@ theme: beige
 
 # example 3: influenza ecology and evolution
 
-![for influenza, gene shuffling probably helps in host switching.[^pnas]](./figures/influenza.png){#flu .class width=700}
+![for influenza, gene shuffling probably helps in host switching.[^pnas]](./figures/influenza.png){#flu .class width=600}
 
 [^pnas]: [Reticulate evolution is favoured in influenza niche switching.](http://www.pnas.org/content/113/19/5335.abstract)
 
