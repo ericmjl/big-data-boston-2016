@@ -6,8 +6,14 @@
 # pandoc slides.md -o index.html -H docs/css/styles.css \
 #     --template=default.html
 #
-pandoc slides.md --section-divs -t revealjs -o slides.html \
+pandoc slides.md \
+    --section-divs \
+    -t revealjs \
     --template=default.revealjs \
-    -c styles.css -s
+    -c styles.css \
+    -s \
+    -o slides.html
 
-git status
+git add .
+git commit
+git push
