@@ -54,7 +54,10 @@ body {
   word-wrap: break-word; }
 
 .reveal h1 {
-  font-size: 4rem; }
+  font-size: 4rem;
+  padding-bottom: 1rem;
+
+}
 
 .reveal h2 {
   font-size: 2.5rem; }
