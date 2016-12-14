@@ -15,7 +15,7 @@ theme: beige
 - slides: [ericmjl.github.io/big-data-boston-2016/slides.html][slides]
 - source: [github.com/ericmjl/big-data-boston-2016][source]
 
-[slides]: http://ericmjl.github.io/big-data-boston-2016/slides.html#/title
+[slides]: http://ericmjl.github.io/big-data-boston-2016/slides.html
 [source]: https://github.com/ericmjl/big-data-boston-2016
 [html]: http://ericmjl.github.io/big-data-boston-2016/
 
