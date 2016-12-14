@@ -5,8 +5,8 @@ python build.py
 #     --template=default.beamer
 
 # Make HTML notes version of slides
-pandoc slides.md -o index.html -H docs/css/styles.css \
-    --template=default.html
+pandoc slides.md -o index.html -c docs/css/notes.css \
+    --template=default.html -H header.html
 
 # Make revealjs version of slides
 pandoc --section-divs -t revealjs -s --template template.revealjs -o slides.html slides.md
