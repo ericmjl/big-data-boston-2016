@@ -26,9 +26,11 @@
 			<div class="slides">
                 <section id="title" class="slide level1">
                     <h1>$title$</h1>
+                    $if(author)$
                     $for(author)$
                     <h2>$author.name$ ($author.affiliation$)</h2>
                     $endfor$
+                    $endif$
                 </section>
                 $body$
 			</div>
