@@ -73,7 +73,7 @@ theme: beige
 
 # visualize networks rationally
 
-![rational network visualizations prioritize placement of nodes](./figures/rational-viz.png){#rational-viz .class width=600}
+![rational network visualizations prioritize placement of nodes](./figures/rational-viz.png){#rational-viz .class width=800}
 
 # conclusions
 
