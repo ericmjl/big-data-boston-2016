@@ -41,7 +41,7 @@ theme: beige
 
 # example 1: recommendation systems
 
-![if `A` is connected to `B` and `C`, but `B` and `C` are not connected, then maybe they should be!](./figures/recommender.png){#recommender .class width=600}
+![if `A` is connected to `B` and `C`, but `B` and `C` are not connected, then maybe they should be!](./figures/recommender.png){#recommender .class width=400}
 
 # example 1: recommendation systems
 
