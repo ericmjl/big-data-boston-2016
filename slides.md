@@ -51,29 +51,29 @@ theme: beige
 
 # example 2: panama papers
 
-![graph databases were used to show how the rich hide their money.[^money]](./figures/panama.png){#panama .class width=350}
+![graph databases were used to show how the rich hide their money.[^money]](./figures/panama.png){#panama .class width=600}
 
 [^money]: [International Consortium of Investigative Journalists (ICIJ) and Neo4j unravel the panama papers.](https://neo4j.com/blog/icij-neo4j-unravel-panama-papers/)
 
 # example 3: influenza ecology and evolution
 
-![for influenza, gene shuffling probably helps in host switching.[^pnas]](./figures/influenza.png){#flu .class width=380}
+![for influenza, gene shuffling probably helps in host switching.[^pnas]](./figures/influenza.png){#flu .class width=500}
 
 [^pnas]: [Reticulate evolution is favoured in influenza niche switching.](http://www.pnas.org/content/113/19/5335.abstract)
 
 # example 4: neural networks on networks
 
-![graph convolutions let us do machine learning on graph-structured data.[^graphconv]](./figures/convolutions.png){#convolutions .class width=350}
+![graph convolutions let us do machine learning on graph-structured data.[^graphconv]](./figures/convolutions.png){#convolutions .class width=600}
 
 [^graphconv]: [Convolutional Networks on Graphs for Learning Molecular Fingerprints](https://arxiv.org/abs/1509.09292)
 
 # visualize networks rationally
 
-![move away from the hairball!](./figures/hairballs.png){#hairballs .class width=400}
+![move away from the hairball!](./figures/hairballs.png){#hairballs .class width=600}
 
 # visualize networks rationally
 
-![rational network visualizations prioritize placement of nodes](./figures/rational-viz.png){#rational-viz .class width=400}
+![rational network visualizations prioritize placement of nodes](./figures/rational-viz.png){#rational-viz .class width=600}
 
 # conclusions
 
