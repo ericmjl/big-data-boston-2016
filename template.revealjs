@@ -7,7 +7,12 @@
 		<title>$title$</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/$theme$.css">
+        <!-- Allows user to select theme, or else default to beige. -->
+        $if(theme)$
+        <link rel="stylesheet" href="css/theme/$theme$.css">
+        $else$
+        <link rel="stylesheet" href="css/theme/serif.css">
+        $endif$
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -43,6 +48,7 @@
 			// More info https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
 				history: true,
+                transition: 'convex',
 
 				// More info https://github.com/hakimel/reveal.js#dependencies
 				dependencies: [
