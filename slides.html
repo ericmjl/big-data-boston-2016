@@ -7,8 +7,9 @@
 		<title>networks, networks everywhere!</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/beige.css">
-
+        <!-- Allows user to select theme, or else default to beige. -->
+                <link rel="stylesheet" href="css/theme/beige.css">
+        
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
 
@@ -137,6 +138,7 @@
 			// More info https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
 				history: true,
+                transition: 'convex',
 
 				// More info https://github.com/hakimel/reveal.js#dependencies
 				dependencies: [
